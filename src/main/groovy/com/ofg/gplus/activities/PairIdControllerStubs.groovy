@@ -13,7 +13,7 @@ class PairIdControllerStubs {
     @Stub
     public static void getPlacesFromTweets() {
         stubFor(
-                put(urlMatching('/activities/\\w+/[0-9]+'))
+                get(urlMatching('/activities/\\w+/[0-9]+'))
                         .withHeader(CONTENT_TYPE, equalTo(APPLICATION_TYPE))
                         .willReturn(aResponse()
                         .withStatus(200)
