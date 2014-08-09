@@ -109,7 +109,3 @@ artifacts {
     archives sourcesJar
     archives fatJar
 }
-
-stubRunner {
-    stubContainingRepositoryUrl = stubRepositoryUrl
-}
