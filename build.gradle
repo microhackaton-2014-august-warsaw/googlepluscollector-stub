@@ -10,6 +10,7 @@ ext {
     versionPrefix = "CD"
     buildNrLoc = project.hasProperty('buildNr') ? "${buildNr}" : "000"
     currentVersion = "${versionPrefix}-${buildNrLoc}"
+    stubRepositoryUrl = 'http://nexus.microhackathon.pl/content/groups/public/'
 }
 
 group = 'com.ofg'
@@ -69,10 +70,10 @@ publishing {
     repositories {
         maven {
             credentials {
-                username ''
-                password ''
+                username 'deployment'
+                password 'deployment123'
             }
-            url 'http://repo.4finance.net/nexus/content/repositories/Pipeline'
+            url 'http://nexus.microhackathon.pl/content/repositories/releases/'
         }
     }
 }
@@ -107,4 +108,8 @@ task wrapper(type: Wrapper) {
 artifacts {
     archives sourcesJar
     archives fatJar
+}
+
+stubRunner {
+    stubContainingRepositoryUrl = stubRepositoryUrl
 }
