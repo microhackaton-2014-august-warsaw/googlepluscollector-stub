@@ -28,4 +28,4 @@ When requested to stop microservices' stubs the [4finance's Micro Deps library](
 url to shutdown the server so remember about that url!
 
 ## Build status
-[![Build Status](https://travis-ci.org/microhackaton/googlepluscollector-stub.svg?branch=master)](https://travis-ci.org/microhackaton/googlepluscollector)
+[![Build Status](https://travis-ci.org/microhackaton/googlepluscollector-stub.svg?branch=master)](https://travis-ci.org/microhackaton/googlepluscollector-stub)

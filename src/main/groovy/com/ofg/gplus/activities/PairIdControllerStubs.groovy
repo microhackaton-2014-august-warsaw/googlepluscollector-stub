@@ -15,7 +15,7 @@ class PairIdControllerStubs {
         stubFor(
                 put(urlMatching('/activities/\\w+/[0-9]+'))
                         .withHeader(CONTENT_TYPE, equalTo(APPLICATION_TYPE))
-                        .willReturn(aRespons e()
+                        .willReturn(aResponse()
                         .withStatus(200)
                 ))
 
