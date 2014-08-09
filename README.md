@@ -1,0 +1,4 @@
+googlepluscollector-stub
+========================
+
+googlepluscollector-stub
